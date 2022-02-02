@@ -1,0 +1,20 @@
+2022-01-15 06:51:13,858 -  nornir.core -     INFO -        run() - Running task 'load_vars' with args {} on 1 hosts
+2022-01-15 06:51:13,859 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'load_yaml' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/usr/local/lib/python3.8/dist-packages/nornir_utils/plugins/tasks/data/load_yaml.py", line 24, in load_yaml
+    with open(file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Nornir-Automation/host_vars/R1.yaml'
+
+2022-01-15 06:51:13,859 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'load_vars' failed with traceback:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/imad/Nornir-Automation/bgp.py", line 11, in load_vars
+    data = task.run(task=load_yaml,
+  File "/usr/local/lib/python3.8/dist-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: load_yaml (failed)
+
+

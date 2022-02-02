@@ -1,0 +1,40 @@
+---
+
+R1:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.11"
+    port: 830
+    groups:
+          - core_nb
+          - cisco_group
+          - core_sb
+
+R2:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.12"
+    port: 830
+    groups:
+          - core_nb
+          - cisco_group
+
+R3:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.105"
+    port: 830
+    groups:
+          - core_sb
+          - cisco_group
+
+R4:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.14"
+    port: 830
+    groups:
+          - core_sb
+          - cisco_group
+
+

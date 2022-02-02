@@ -1,0 +1,15 @@
+
+core_nb:
+  data:
+    device_type: core_nb
+core_sb:
+  data:
+    device_type: core_sb
+
+cisco_group:
+  platform: 'cisco_xe'
+
+
+
+
+
